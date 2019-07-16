@@ -1,0 +1,80 @@
+{
+  "name": "ngx-ode-ui",
+  "description": "ODE UI library written in angular4",
+  "author": "",
+  "version": "1.0.0-dev.0",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json",
+    "test": "ng test --watch false",
+    "test-watch": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opendigitaleducation/ngx-ode-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opendigitaleducation/ngx-ode-ui/issues"
+  },
+  "homepage": "https://github.com/opendigitaleducation/ngx-ode-ui#readme",
+  "keywords": [
+    "angular4",
+    "ode",
+    "ui",
+    "ux"
+  ],
+  "private": false,
+  "dependencies": {},
+  "peerDependencies": {
+    "@angular/common": "^4.4.7",
+    "@angular/core": "^4.4.7",
+    "@angular/forms": "^4.4.7",
+    "@angular/http": "^4.4.7",
+    "@angular/language-service": "^4.4.7",
+    "@angular/platform-browser": "^4.4.7",
+    "@angular/platform-browser-dynamic": "^4.4.7",
+    "sijil": "^1.0.2",
+    "rxjs": "^5.4.2",
+    "jquery": "^3.2.1",
+    "zone.js": "^0.8.14",
+    "ngx-infinite-scroll": "^0.7.0",
+    "flatpickr": "2.6.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.4.9",
+    "@angular/common": "^4.4.7",
+    "@angular/compiler": "^4.4.7",
+    "@angular/compiler-cli": "^4.4.7",
+    "@angular/core": "^4.4.7",
+    "@angular/forms": "^4.4.7",
+    "@angular/http": "^4.4.7",
+    "@angular/language-service": "^4.4.7",
+    "@angular/platform-browser": "^4.4.7",
+    "@angular/platform-browser-dynamic": "^4.4.7",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "ngx-infinite-scroll": "^0.7.0",
+    "flatpickr": "2.6.1",
+    "core-js": "^2.4.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "jquery": "^3.2.1",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
+    "rxjs": "^5.4.2",
+    "sijil": "^1.0.2",
+    "ts-node": "~3.2.0",
+    "typescript": "~2.3.3",
+    "uglify-js": "^3.3.18",
+    "zone.js": "^0.8.14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
