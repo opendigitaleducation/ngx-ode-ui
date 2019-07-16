@@ -17,6 +17,7 @@ pipeline {
         steps {
           configFileProvider([configFile(fileId: '.npmrc-infra-front', variable: 'NPMRC')]) {
             sh 'cp $NPMRC .npmrc'
+            sh 'cp $NPMRC dist/.npmrc'
             sh './build.sh publish'
           }
         }
