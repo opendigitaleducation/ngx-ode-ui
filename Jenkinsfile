@@ -9,11 +9,6 @@ pipeline {
           sh './build.sh buildSass'
         }
       }
-      stage('Test') {
-        steps {
-          sh './build.sh test'
-        }
-      }
       stage('Build') {
         steps {
           sh './build.sh build'
