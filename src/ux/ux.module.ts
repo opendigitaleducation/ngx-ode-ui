@@ -117,7 +117,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
         LocalizedDatePipe,
         BytesPipe
     ],
-    providers: [OrderPipe],
+    providers: [],
     entryComponents: [SimpleSelectComponent, MessageBoxComponent]
 })
 export class UxModule {
