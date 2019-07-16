@@ -6,7 +6,6 @@ pipeline {
       stage('Init') {
         steps {
           checkout scm
-          sh './build.sh buildSass'
         }
       }
       stage('Build') {
