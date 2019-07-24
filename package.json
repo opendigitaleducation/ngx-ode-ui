@@ -2,7 +2,7 @@
   "name": "ngx-ode-ui",
   "description": "ODE UI library written in angular4",
   "author": "",
-  "version": "1.0.0-dev.4",
+  "version": "1.0.0-dev.5",
   "license": "AGPL-3.0",
   "scripts": {
     "build": "ng-packagr -p ng-package.json",
