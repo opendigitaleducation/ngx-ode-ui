@@ -4,29 +4,31 @@ import { FormsModule } from '@angular/forms'
 
 import { SijilModule } from 'sijil';
 
-import { DatepickerComponent, 
-    FormErrorsComponent, 
-    FormFieldComponent, 
+import {
+    DatepickerComponent,
+    FormErrorsComponent,
+    FormFieldComponent,
     ItemTreeComponent,
     LightBoxComponent,
-    LightboxConfirmComponent, 
-    ListComponent, 
+    LightboxConfirmComponent,
+    ListComponent,
     MultiComboComponent,
     MultiSelectComponent,
     MonoSelectComponent,
-    PanelSectionComponent, 
+    PanelSectionComponent,
     PortalComponent,
-    PushPanelComponent, 
+    PushPanelComponent,
     SearchInputComponent,
-    SideLayoutComponent, 
-    SidePanelComponent, 
+    SideLayoutComponent,
+    SidePanelComponent,
     StepComponent,
     TooltipComponent,
     WizardComponent,
     SimpleSelectComponent,
     MessageStickerComponent,
     MessageBoxComponent,
-    UploadFilesComponent } from './components'
+    UploadFilesComponent
+} from './components'
 import { AnchorDirective, DynamicTemplateDirective, DynamicComponentDirective, DragAndDropFilesDirective } from './directives'
 import { FilterPipe, OrderPipe, StorePipe, LimitPipe, FlattenObjectArrayPipe, LocalizedDatePipe, BytesPipe } from './pipes'
 import { DynamicModuleImportsService, LabelsService, InputFileService } from './services';
@@ -132,10 +134,10 @@ export class UxModule {
         };
     }
 
-    static forChild() : ModuleWithProviders {
+    static forChild(withFile: boolean = false): ModuleWithProviders {
         return {
             ngModule: UxModule,
-            providers: []
+            providers: withFile ? [InputFileService] : []
         }
     }
 }
