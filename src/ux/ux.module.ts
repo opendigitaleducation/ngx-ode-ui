@@ -119,7 +119,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
         LocalizedDatePipe,
         BytesPipe
     ],
-    providers: [],
+    providers: [InputFileService],
     entryComponents: [SimpleSelectComponent, MessageBoxComponent]
 })
 export class UxModule {
@@ -128,16 +128,15 @@ export class UxModule {
             ngModule: UxModule,
             providers: [
                 DynamicModuleImportsService,
-                labelsProvider || LabelsService,
-                InputFileService
+                labelsProvider || LabelsService
             ]
         };
     }
 
-    static forChild(withFile: boolean = false): ModuleWithProviders {
+    static forChild(): ModuleWithProviders {
         return {
             ngModule: UxModule,
-            providers: withFile ? [InputFileService] : []
+            providers: []
         }
     }
 }
