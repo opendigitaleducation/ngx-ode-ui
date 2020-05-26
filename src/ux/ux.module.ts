@@ -121,7 +121,7 @@ import { SijilLabelsService } from './services/sijil.labels.service';
         LocalizedDatePipe,
         BytesPipe
     ],
-    providers: [InputFileService],
+    providers: [InputFileService, SijilLabelsService],
     entryComponents: [SimpleSelectComponent, MessageBoxComponent]
 })
 export class UxModule {
