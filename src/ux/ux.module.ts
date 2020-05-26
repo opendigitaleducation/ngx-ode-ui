@@ -34,6 +34,7 @@ import { FilterPipe, OrderPipe, StorePipe, LimitPipe, FlattenObjectArrayPipe, Lo
 import { DynamicModuleImportsService, LabelsService } from './services';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { InputFileService } from "./services/inputFile.service";
+import { SijilLabelsService } from './services/sijil.labels.service';
 
 @NgModule({
     imports: [
@@ -140,4 +141,18 @@ export class UxModule {
             providers: []
         }
     }
+    static withSijil(): ModuleWithProviders {
+        return {
+            ngModule: UxModule,
+            providers: [
+                DynamicModuleImportsService,
+                {
+                    provide: LabelsService,
+                    useExisting: SijilLabelsService
+                }    
+            ]
+                        
+        };
+    }
 }
+
