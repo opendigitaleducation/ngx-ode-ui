@@ -12,6 +12,7 @@ import { Component, Input } from '@angular/core'
                             [messages]="[help]">
                 </message-sticker>
             </label>
+            <form-errors *ngIf="control" [control]="control"></form-errors> 
             <ng-content></ng-content>
         </div>
     `,
@@ -27,4 +28,5 @@ export class FormFieldComponent {
     @Input() label: string;
     @Input() help: string;
     @Input() required: boolean;
+    @Input() control: string;
 }
