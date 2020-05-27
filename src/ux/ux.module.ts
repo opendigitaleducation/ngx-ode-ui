@@ -138,7 +138,7 @@ export class UxModule {
     static forChild(): ModuleWithProviders {
         return {
             ngModule: UxModule,
-            providers: []
+            providers: [SijilLabelsService]
         }
     }
     static withSijil(): ModuleWithProviders {
