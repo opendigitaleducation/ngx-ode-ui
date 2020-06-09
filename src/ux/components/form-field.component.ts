@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core'
+import { AbstractControl } from '@angular/forms';
 
 @Component({
     selector: 'form-field',
@@ -28,5 +29,5 @@ export class FormFieldComponent {
     @Input() label: string;
     @Input() help: string;
     @Input() required: boolean;
-    @Input() control: string;
+    @Input() control: AbstractControl;
 }
